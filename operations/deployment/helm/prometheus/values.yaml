@@ -1,0 +1,16 @@
+configmap:
+  enabled: true
+  name: prometheus
+data:
+  mapAccounts: |
+    - "755521597925"
+  mapRoles: |
+    - "groups":
+      - "system:bootstrappers"
+      - "system:nodes"
+      "rolearn": "arn:aws:iam::755521597925:role/env-eksworker"
+      "username": "system:node:{{EC2PrivateDNSName}}"
+    - "groups":
+      - "system:masters"
+      "rolearn": "arn:aws:iam::755521597925:role/AWSReservedSSO_AdministratorAccess_402f22a297379e03"   
+      username: cluster-admin
