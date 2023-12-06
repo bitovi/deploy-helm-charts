@@ -20,7 +20,6 @@ jobs:
         chart-path: operations/deployment/helm/grafana
         namespace: monitoring
         name: grafana
-        cluster-name: mycluster
         chart-repository: https://github.com/grafana/helm-charts
         version: 7.0.13
         atomic: true
