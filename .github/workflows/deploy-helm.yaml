@@ -47,4 +47,3 @@ jobs:
         #aws_eks_min_size:
  
         aws_eks_create: true
-# test
