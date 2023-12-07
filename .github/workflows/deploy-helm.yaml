@@ -31,8 +31,8 @@ jobs:
          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_SANDBOX }}
          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_SANDBOX }}
          aws-region: us-east-1
-         config-files: "operations/deployment/helm/grafana/values.yaml"
-         chart-path: "operations/deployment/helm/grafana"
+         #config-files: "operations/deployment/helm/grafana/values.yaml"
+         #chart-path: "operations/deployment/helm/grafana"
          namespace: leo-monitoring
          name: leo-grafana
          chart-repository: https://grafana.github.io/helm-charts
