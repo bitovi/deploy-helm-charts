@@ -34,7 +34,7 @@ jobs:
          #config-files: "operations/deployment/helm/grafana/values.yaml"
          #chart-path: "operations/deployment/helm/grafana"
          namespace: leo-monitoring
-         name: "grafana/grafana"
+         name: grafana
          chart-repository: https://grafana.github.io/helm-charts
          version: 7.0.11
          atomic: true
