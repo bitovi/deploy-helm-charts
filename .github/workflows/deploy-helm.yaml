@@ -32,11 +32,17 @@ jobs:
          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_SANDBOX }}
          aws-region: us-east-1
          #config-files: "operations/deployment/helm/grafana/values.yaml"
-         chart-path: grafana/grafana
-         namespace: leo-monitoring
-         name: grafana
-         chart-repository: https://grafana.github.io/helm-charts
-         version: 7.0.11
-         atomic: false
-         cluster-name: bitovi-deploy-helm-charts-karam-helm-task-cluster
+         #chart-path: grafana/grafana
+         #namespace: leo-monitoring
+         #name: grafana
+         #chart-repository: https://grafana.github.io/helm-charts
+         #version: 7.0.11
+         #atomic: false
+         #cluster-name: bitovi-deploy-helm-charts-karam-helm-task-cluster
          timeout: 30s
+         chart-path: fluent/fluent-bit
+         namespace: logging
+         name: fluent-bit
+         chart-repository: https://fluent.github.io/helm-charts
+         version: 0.20.6
+         atomic: true
