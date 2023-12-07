@@ -35,7 +35,7 @@ jobs:
          chart-path: operations/deployment/helm/grafana
          namespace: leo-monitoring
          name: leo-grafana
-         chart-repository: https://github.com/grafana/helm-charts
+         chart-repository: https://grafana.github.io/helm-charts
          version: 7.0.13
          atomic: true
          cluster-name: bitovi-deploy-helm-charts-karam-helm-task-cluster
