@@ -38,7 +38,7 @@ jobs:
          #chart-repository: https://grafana.github.io/helm-charts
          #version: 7.0.11
          #atomic: false
-         #cluster-name: bitovi-deploy-helm-charts-karam-helm-task-cluster
+         cluster-name: bitovi-deploy-helm-charts-karam-helm-task-cluster
          timeout: 30s
          chart-path: fluent/fluent-bit
          namespace: logging
