@@ -2,7 +2,7 @@ name: Deploy EKS Cluster
 
 on:
   push:
-    branches: [ bitops-conditional-helm ]
+    branches: [ eks-helm-test ]
       
 
 jobs:
