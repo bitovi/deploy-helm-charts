@@ -39,4 +39,4 @@ jobs:
          version: 7.0.11
          atomic: false
          cluster-name: bitovi-deploy-helm-charts-karam-helm-task-cluster
-         timeout: 30
+         timeout: 30s
