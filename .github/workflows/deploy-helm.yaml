@@ -21,8 +21,8 @@ jobs:
   
         bitops_code_only: 
         bitops_code_store: 
-        tf_state_bucket_destroy: true
-        tf_stack_destroy: true
+        tf_state_bucket_destroy:
+        tf_stack_destroy:
         aws_eks_create: true
 
     # - name: Deploy Helm
