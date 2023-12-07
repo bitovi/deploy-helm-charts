@@ -10,54 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-#    - name: deploy
-#      uses: bitovi/github-actions-deploy-eks@karam-helm-task
-#      with:
-#        aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID_SANDBOX }}
-#        aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY_SANDBOX }}
-#        aws_default_region: us-east-1
-
-#        input_helm_charts:
-  
-#        bitops_code_only: 
-#        bitops_code_store: 
-#        tf_state_bucket_destroy: true
-#        tf_stack_destroy:
-#        aws_eks_create: true
-
-     - name: Deploy fluent-bit
-       uses: bitovi/github-actions-deploy-eks-helm@v1.2.8
-       with:
-         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_SANDBOX }}
-         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_SANDBOX }}
-         aws-region: us-east-1
-         #config-files: "operations/deployment/helm/grafana/values.yaml"
-         #chart-path: grafana/grafana
-         #namespace: leo-monitoring
-         #name: grafana
-         #chart-repository: https://grafana.github.io/helm-charts
-         #version: 7.0.11
-         #atomic: false
-         cluster-name: bitovi-deploy-helm-charts-karam-helm-task-cluster
-         timeout: 30s
-         chart-path: fluent/fluent-bit
-         namespace: logging
-         name: fluent-bit
-         chart-repository: https://fluent.github.io/helm-charts
-         version: 0.40.0
-         atomic: true
-
      - name: Deploy Grafana
        uses: bitovi/github-actions-deploy-eks-helm@v1.2.8
        with:
-         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_SANDBOX }}
-         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_SANDBOX }}
-         aws-region: us-east-1
-         #config-files: "operations/deployment/helm/grafana/values.yaml"
-         chart-path: grafana/grafana
-         namespace: lmonitoring
-         name: leo-grafana
-         chart-repository: https://grafana.github.io/helm-charts
-         version: 7.0.11
-         cluster-name: bitovi-deploy-helm-charts-karam-helm-task-cluster
-         timeout: 30s
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_SANDBOX }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_SANDBOX }}
+        aws-region: us-east-1
+        #config-files: "operations/deployment/helm/grafana/values.yaml"
+        chart-path: grafana/grafana
+        namespace: kmonitoring
+        name: karam-grafana
+        chart-repository: https://grafana.github.io/helm-charts
+        version: 7.0.11
+        cluster-name: bitovi-deploy-helm-charts-karam-helm-task-cluster
+        timeout: 30s
