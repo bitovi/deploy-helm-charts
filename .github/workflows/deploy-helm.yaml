@@ -37,5 +37,5 @@ jobs:
          name: grafana
          chart-repository: https://grafana.github.io/helm-charts
          version: 7.0.11
-         atomic: true
+         atomic: false
          cluster-name: bitovi-deploy-helm-charts-karam-helm-task-cluster
