@@ -22,7 +22,7 @@ jobs:
         tf_state_bucket_destroy:
         tf_stack_destroy: true
         aws_eks_create: true
-# test
+
     # - name: Deploy Helm
     #   uses: bitovi/github-actions-deploy-eks-helm@v1.2.8
     #   with:
