@@ -22,5 +22,5 @@ jobs:
          name: karam-grafana
          chart-repository: https://grafana.github.io/helm-charts
          version: 7.0.11
-         cluster-name: bitovi-deploy-helm-charts-karam-helm-task-cluster
+         cluster-name: bitovi-deploy-helm-charts-karam
          timeout: 30s
