@@ -16,4 +16,3 @@ jobs:
         aws_default_region: us-east-1  
         aws_eks_create: true
         tf_stack_destroy:
-# test
