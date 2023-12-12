@@ -1,6 +1,6 @@
 configmap:
   enabled: true
-  name: fluent-operator
+  name: grafana
 data:
   mapAccounts: |
     - "755521597925"
