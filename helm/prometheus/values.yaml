@@ -1,6 +1,6 @@
 configmap:
   enabled: true
-  name: grafana
+  name: prometheus
 data:
   mapAccounts: |
     - "755521597925"
