@@ -18,4 +18,4 @@ jobs:
         input_helm_charts: helm
         tf_stack_destroy:
         prometheus-enable: true
-        grafana-enable:
+        grafana-enable: true
