@@ -19,3 +19,4 @@ jobs:
         tf_stack_destroy:
         prometheus-enable:
         grafana-enable:
+        loki-enable: 
