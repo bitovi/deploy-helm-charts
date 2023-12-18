@@ -18,6 +18,6 @@ jobs:
         input_helm_charts: helm
         tf_stack_destroy:
         prometheus-enable:
-        grafana-enable:
+        grafana-enable: true
         loki-enable:
-        nginx-enable: true
+        nginx-enable:
