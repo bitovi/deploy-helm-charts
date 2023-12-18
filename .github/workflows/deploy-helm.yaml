@@ -20,4 +20,4 @@ jobs:
         prometheus-enable:
         grafana-enable:
         loki-enable:
-        nginx-enable:
+        nginx-enable: true
