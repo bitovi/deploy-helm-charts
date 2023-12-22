@@ -21,3 +21,4 @@ jobs:
         grafana-enable:
         # loki-enable:
         # nginx-enable:
+# test
