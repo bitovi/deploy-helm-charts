@@ -9,10 +9,8 @@
 #     - port: 3000
 #       targetPort: 3000
 #   type: LoadBalancer
-
-
+  
   service:
-  type: ClusterIP
   port: 80
   targetPort: 3000
     # targetPort: 4181 To be used with a proxy extraContainer
@@ -22,11 +20,9 @@
 
   ingress:
   enabled: true
-  # Values can be templated
-  annotations: {}
-    # kubernetes.io/ingress.class: nginx
-    # kubernetes.io/tls-acme: "true"
-  labels: {}
-  path: /*
+  annotations: 
+    kubernetes.io/ingress.class: nginx
   hosts:
-    - grafana.domain.com
+    - host: grafana.domain.com
+      paths:
+        - /
