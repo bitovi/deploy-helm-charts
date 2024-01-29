@@ -23,6 +23,6 @@
   annotations: 
     kubernetes.io/ingress.class: nginx
   hosts:
-    - host: grafana.domain.com
+    - host: aa1c52ffae26642df850ecd953f35f02-550049158.us-east-1.elb.amazonaws.com
       paths:
         - /
