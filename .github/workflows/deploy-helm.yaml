@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Create EKS Cluster
-      uses: bitovi/github-actions-deploy-eks@main
+      uses: bitovi/github-actions-deploy-eks@bitops-conditional-helm
       with:
         aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID_SANDBOX}}
         aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY_SANDBOX}}
@@ -19,7 +19,7 @@ jobs:
         # input_helm_charts:
         # tf_stack_destroy: true
         # prometheus-enable: true
-        grafana-enable: true
+        grafana_enable: true
         # loki-enable:
         # nginx-enable: true
 #2nd
