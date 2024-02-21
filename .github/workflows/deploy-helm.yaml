@@ -19,8 +19,8 @@ jobs:
         # input_helm_charts:
         # tf_stack_destroy: true
         tf_state_bucket_destroy: true
-        # prometheus-enable: true
+        prometheus_enable: true
         grafana_enable: true
-        # loki-enable:
-        # nginx-enable: true
+        loki_enable: true
+        nginx_enable: true
 #2nd
